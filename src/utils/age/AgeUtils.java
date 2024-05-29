@@ -1,6 +1,6 @@
-package utils;
+package utils.age;
 
-public interface Helper {
+public interface AgeUtils {
     String getUserInput();
     int getAge();
     void validateAge(int age);

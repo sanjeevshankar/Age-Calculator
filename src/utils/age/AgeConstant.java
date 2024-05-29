@@ -1,4 +1,4 @@
-package utils;
+package utils.age;
 
 public class AgeConstant {
     public static final String SMALL_Y = "y";
