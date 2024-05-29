@@ -1,11 +1,13 @@
-package utils;
+package utils.age;
 
 import java.util.Scanner;
 
-public class HelperImplementation implements Helper {
+public class AgeImplementation implements AgeUtils {
+    int age;
+    String proceed;
+
     @Override
     public int getAge() {
-        int age;
         Scanner myObj = new Scanner(System.in);  // Create a Scanner object
         System.out.println("Enter age:\t");
 
@@ -16,7 +18,6 @@ public class HelperImplementation implements Helper {
 
     @Override
     public String getUserInput() {
-        String proceed;
         Scanner myObj = new Scanner(System.in);  // Create a Scanner object
         System.out.println("Do you want to proceed. y or n \n");
 
@@ -26,7 +27,7 @@ public class HelperImplementation implements Helper {
     }
 
     @Override
-    public  void validateAge(int age) {
+    public void validateAge(int age) {
         if (age < 13) {
             System.out.print("Kid\n");
         } else if (age < 18 && age > 13) {
