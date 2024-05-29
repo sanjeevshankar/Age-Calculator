@@ -28,12 +28,15 @@ public class AgeImplementation implements AgeUtils {
 
     @Override
     public void validateAge(int age) {
-        if (age < 13) {
-            System.out.print("Kid\n");
+        if (age < 13 && age > 0) {
+            System.out.print("Category: Kid\n");
         } else if (age < 18 && age > 13) {
-            System.out.print("Teen\n");
+            System.out.print("Category: Teen\n");
         } else if (age > 18) {
-            System.out.print("Adult\n");
+            System.out.print("Category: Adult\n");
+        } else {
+            System.out.println("Invalid age");
+
         }
     }
 }
