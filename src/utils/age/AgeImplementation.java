@@ -12,7 +12,8 @@ public class AgeImplementation implements AgeUtils {
         System.out.println("Enter age:\t");
 
         age = Integer.parseInt(myObj.nextLine());  // Read user input
-        System.out.println("Age is: " + age);  // Output user input
+        System.out.println("Your age is " + age + ".");  // Output user input
+        System.out.println(" ");
         return age;
     }
 
